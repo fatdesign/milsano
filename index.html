@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milsano Feuergrill | Mils bei Innsbruck</title>
+    <meta name="description"
+        content="Erleben Sie einzigartigen Genuss vom Buchenholzgrill im milsano. Heimisches Rind, Ripperlen, Burger und mehr am offenen Feuer zubereitet.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="fire-container">
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+        </div>
+        <img src="public/assets/logo-milsano.png" alt="milsano" class="loader-logo">
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <img src="public/assets/logo-milsano.png" alt="milsano Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#grill">Feuergrill</a>
+                <a href="#menu">Speisekarte</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal">EINZIGARTIG IN TIROL</h1>
+            <h2 class="reveal">UNSER FEUERGRILL</h2>
+            <p class="reveal">Heimisches Fleisch zubereitet am offenen Buchenholzfeuer.</p>
+            <a href="#reservation" class="btn btn-primary reveal">Tisch reservieren</a>
+        </div>
+    </header>
+
+    <section id="reservation" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Reservierung</span>
+                <h2>Sichern Sie sich Ihren Platz</h2>
+                <p>Erleben Sie Fleischgenuss auf höchstem Niveau am offenen Feuer.</p>
+            </div>
+            <div class="reservation-box reveal">
+                <form id="reservation-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="res-date">Datum</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Uhrzeit</label>
+                            <input type="time" id="res-time" min="10:00" max="22:00" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-guests">Personen</label>
+                            <select id="res-guests" required>
+                                <option value="" disabled selected>Anzahl wählen</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Personen</option>
+                                <option value="3">3 Personen</option>
+                                <option value="4">4 Personen</option>
+                                <option value="5">5 Personen</option>
+                                <option value="6">6 Personen</option>
+                                <option value="more">Mehr als 6 Personen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-name">Name</label>
+                            <input type="text" id="res-name" placeholder="Ihr Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-phone">Telefon</label>
+                            <input type="tel" id="res-phone" placeholder="Ihre Telefonnummer" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-email">E-Mail</label>
+                            <input type="email" id="res-email" placeholder="Ihre E-Mail" required>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary btn-block">Jetzt verbindlich anfragen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="fire-icon">🔥</div>
+            <h2>Anfrage gesendet!</h2>
+            <p>Vielen Dank für deine Reservierung. Wir prüfen die Verfügbarkeit und melden uns in Kürze bei dir.</p>
+            <button class="btn btn-outline" id="close-modal">Schließen</button>
+        </div>
+    </div>
+
+    <section id="grill" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="text-content reveal">
+                    <span class="subtitle">Das Herzstück</span>
+                    <h2>Der Buchenholzgrill</h2>
+                    <p>Man betritt das Lokal und der Blick wird unwillkürlich sofort ins Zentrum wandern. Besonderen
+                        Genuss verspricht der tirolweit einzigartig angefertigte Buchenholzgrill.</p>
+                    <p>Heimisches Filet vom Rind oder ein Rib Eye, sowie feurige Ripperlen, Burger & Lachssteaks werden
+                        am offenen Feuer bei uns im milsano zubereitet.</p>
+                </div>
+                <div class="image-content reveal">
+                    <img src="public/assets/milsano-grill.jpg" alt="Milsano Feuergrill" class="parallax-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Auswahl</span>
+                <h2>Unsere Klassiker</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item reveal">
+                    <h3>Heimisches Rinderfilet</h3>
+                    <p>Vom offenen Buchenholzgrill, serviert mit saisonalen Beilagen.</p>
+                </div>
+                <div class="menu-item reveal">
+                    <h3>Feurige Ripperlen</h3>
+                    <p>Unsere Spezialität, perfekt mariniert und knusprig gegrillt.</p>
+                </div>
+                <div class="menu-item reveal">
+                    <h3>milsano Burger</h3>
+                    <p>Saftiges Fleisch, frische Zutaten und die feine Rauchnote des Feuers.</p>
+                </div>
+                <div class="menu-item reveal">
+                    <h3>Lachssteak</h3>
+                    <p>Auf der Haut gegrillt, zart und aromatisch.</p>
+                </div>
+            </div>
+            <div class="text-center reveal">
+                <a href="https://fatdesign.github.io/milsano-menu/" target="_blank"
+                    class="btn btn-outline">Vollständiges Menü ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="contact-info reveal">
+                    <span class="subtitle">Kontakt</span>
+                    <h2>Besuchen Sie uns</h2>
+                    <p><strong>Adresse:</strong> Dorfplatz 1, 6068 Mils</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+436607330304">+43 660 7330 304</a></p>
+                    <p><strong>Mail:</strong> <a href="mailto:office@milsano.at">office@milsano.at</a></p>
+                    <div class="hours">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Dienstag - Samstag: 10:00 - 24:00 Uhr</p>
+                        <p>Sonntag & Montag: Ruhetag</p>
+                    </div>
+                </div>
+                <div class="map-container reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.3204!2d11.528203!3d47.2857948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d6593d435ea93%3A0x15a30a67885e65b6!2sMilsano+-+Caf%C3%A9+.+Bar+.+Restaurant!5e0!3m2!1sde!2sat!4v1487246231068"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img src="public/assets/logo-milsano.png" alt="milsano Logo" class="footer-logo">
+                <p>&copy; 2026 milsano. Alle Rechte vorbehalten. #milsanotime</p>
+                <div class="legal-links">
+                    <a href="https://www.milsano.at/impressum/" target="_blank">Impressum</a>
+                    <a href="https://www.milsano.at/datenschutz/" target="_blank">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
