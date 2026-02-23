@@ -40,6 +40,18 @@
             "de": "...mit allem was dazu gehört!",
             "en": "...with all the trimmings!"
           }
+        },
+        {
+          "name": {
+            "de": "Coco Lolo",
+            "en": "Coco Lolo"
+          },
+          "price": "74.77",
+          "isSoldOut": false,
+          "desc": {
+            "de": "",
+            "en": ""
+          }
         }
       ]
     },
