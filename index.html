@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <script src="settings.js"></script>
 </head>
 
 <body>
@@ -130,61 +129,34 @@
 
     <section id="menu" class="section">
         <div class="container">
-            <div class="menu-header reveal">
-                <div class="section-header">
-                    <span class="subtitle">Auswahl</span>
-                    <h2>Hausgemachte Spezialitäten</h2>
+            <div class="section-header reveal">
+                <span class="subtitle">Auswahl</span>
+                <h2>Unsere Klassiker</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item reveal">
+                    <h3>Heimisches Rinderfilet</h3>
+                    <p>Vom offenen Buchenholzgrill, serviert mit saisonalen Beilagen.</p>
                 </div>
-
-                <div class="menu-controls">
-                    <div class="menu-switcher">
-                        <button class="menu-type-btn active" data-type="mittag">MITTAG</button>
-                        <button class="menu-type-btn" data-type="abend">ABEND</button>
-                    </div>
-                    <div class="lang-switcher">
-                        <button class="lang-btn active" data-lang="de">DE</button>
-                        <button class="lang-btn" data-lang="en">EN</button>
-                    </div>
+                <div class="menu-item reveal">
+                    <h3>Feurige Ripperlen</h3>
+                    <p>Unsere Spezialität, perfekt mariniert und knusprig gegrillt.</p>
+                </div>
+                <div class="menu-item reveal">
+                    <h3>milsano Burger</h3>
+                    <p>Saftiges Fleisch, frische Zutaten und die feine Rauchnote des Feuers.</p>
+                </div>
+                <div class="menu-item reveal">
+                    <h3>Lachssteak</h3>
+                    <p>Auf der Haut gegrillt, zart und aromatisch.</p>
                 </div>
             </div>
-
-            <!-- Category Ribbon -->
-            <nav class="ribbon-nav reveal">
-                <ul id="category-list" class="ribbon-list">
-                    <!-- Dynamic categories -->
-                </ul>
-            </nav>
-
-            <div id="menu-app" class="reveal">
-                <!-- Dynamic Menu Items -->
+            <div class="text-center reveal">
+                <a href="https://fatdesign.github.io/milsano-menu/" target="_blank"
+                    class="btn btn-outline">Vollständiges Menü ansehen</a>
             </div>
         </div>
     </section>
-
-    <!-- Floating Cart -->
-    <button id="cart-toggle" class="floating-cart hidden reveal">
-        <span class="cart-icon">🛒</span>
-        <span id="cart-count" class="cart-badge">0</span>
-    </button>
-
-    <!-- Cart Drawer -->
-    <div id="cart-drawer" class="cart-drawer">
-        <div class="cart-header">
-            <h3>MERKLISTE</h3>
-            <button id="close-cart" class="btn-close">&times;</button>
-        </div>
-        <div id="cart-items" class="cart-items-container">
-            <p class="empty-msg">Deine Liste ist leer.</p>
-        </div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span id="cart-total-price">€ 0.00</span>
-            </div>
-            <p class="cart-note">Bitte bei der Bestellung angeben.</p>
-            <button id="clear-cart" class="btn-clear">Liste leeren</button>
-        </div>
-    </div>
 
     <section id="contact" class="section section-light">
         <div class="container">
