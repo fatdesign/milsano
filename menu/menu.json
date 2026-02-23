@@ -40,30 +40,6 @@
             "de": "...mit allem was dazu gehört!",
             "en": "...with all the trimmings!"
           }
-        },
-        {
-          "name": {
-            "de": "Coco Shosho Lolo",
-            "en": "Coco Shosho Lolo"
-          },
-          "price": "780.44",
-          "isSoldOut": false,
-          "desc": {
-            "de": "Popo",
-            "en": "Popo"
-          }
-        },
-        {
-          "name": {
-            "de": "Shosho Lolo",
-            "en": "Shosho Lolo"
-          },
-          "price": "887.99",
-          "isSoldOut": false,
-          "desc": {
-            "de": "",
-            "en": ""
-          }
         }
       ]
     },
