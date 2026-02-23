@@ -120,7 +120,7 @@ async function proxyRequest(method, body = null) {
         headers: {
             'Content-Type': 'application/json',
             'X-Admin-Password': sessionPassword,
-            'X-Menu-File': currentMenuFile
+            'X-Menu-File': `menu/${currentMenuFile}`
         },
     };
     if (body) options.body = JSON.stringify(body);
