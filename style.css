@@ -327,28 +327,42 @@ h3,
     color: var(--primary);
 }
 
-.dark-bg {
-    background-color: var(--bg-light);
+.section-light {
+    background-color: var(--secondary);
     color: var(--bg);
 }
 
-.dark-bg h2,
-.dark-bg h3 {
+.section-light h2,
+.section-light h3 {
     color: var(--bg);
 }
 
-.dark-bg .subtitle {
+.section-light .subtitle {
     color: var(--primary-dark);
 }
 
-.dark-bg .menu-item p {
+.section-light .menu-item p {
     color: var(--bg);
     opacity: 0.8;
 }
 
-.dark-bg .menu-item {
+.section-light .menu-item {
     background: rgba(1, 24, 38, 0.05);
     border-color: rgba(1, 24, 38, 0.1);
+}
+
+.section-light .btn-outline {
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
+}
+
+.section-light .btn-outline:hover {
+    background-color: var(--primary-dark);
+    color: var(--secondary);
+}
+
+.section-light .image-content img {
+    box-shadow: 20px 20px 0 var(--primary-dark);
 }
 
 .grid-2 {
