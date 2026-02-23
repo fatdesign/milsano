@@ -35,7 +35,7 @@
             "en": "BEEF TARTARE"
           },
           "price": "20.90",
-          "isSoldOut": false,
+          "isSoldOut": true,
           "desc": {
             "de": "...mit allem was dazu gehört!",
             "en": "...with all the trimmings!"
