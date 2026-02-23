@@ -150,7 +150,7 @@ async function loadMenu() {
 
         console.warn('Proxy nicht erreichbar, lade lokale Datei:', currentMenuFile, err.message);
         try {
-            const res = await fetch(`../${currentMenuFile}`);
+            const res = await fetch(`../menu/${currentMenuFile}`);
             menuData = await res.json();
             currentFileSha = null;
             categoriesContainer.innerHTML = '';
