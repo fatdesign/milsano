@@ -55,11 +55,12 @@
             "de": "SPAGHETTI AGLIO OLIO",
             "en": "SPAGHETTI AGLIO OLIO"
           },
+          "price": "13.90",
+          "isSoldOut": true,
           "desc": {
             "de": "Olivenöl I Parmesan I scharf",
             "en": "Olive oil I Parmesan I spicy"
-          },
-          "price": "13.90"
+          }
         },
         {
           "name": {
