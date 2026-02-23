@@ -52,6 +52,18 @@
             "de": "Popo",
             "en": "Popo"
           }
+        },
+        {
+          "name": {
+            "de": "Shosho Lolo",
+            "en": "Shosho Lolo"
+          },
+          "price": "887.99",
+          "isSoldOut": false,
+          "desc": {
+            "de": "",
+            "en": ""
+          }
         }
       ]
     },
