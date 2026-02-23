@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILSANO | ABEND MENÜ</title>
+    <meta name="description" content="" data-hydrate="metaDescription">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="settings.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-menu-type="abend">
+
+    <!-- Badges -->
+    <div class="badge badge-opening">
+        <p>Di - Sa</p>
+        <p>18:00 - 21:30</p>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header glass animate-fade-in">
+        <div class="container header-content">
+            <div class="header-top-row">
+                <div class="logo-container">
+                    <img src="logo/logo-milsano.png" alt="Milsano Logo" class="restaurant-logo">
+                </div>
+                <div class="header-actions">
+                    <div class="menu-switcher">
+                        <a href="index.html" class="menu-type-btn">MITTAG</a>
+                        <a href="abend.html" class="menu-type-btn active">ABEND</a>
+                    </div>
+                    <div class="lang-switcher">
+                        <button class="lang-btn" data-lang="de">DE</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Ribbon (Horizontal Scroll) -->
+            <nav class="category-nav ribbon-nav">
+                <ul id="category-list" class="ribbon-list">
+                    <!-- Categories will be injected here -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Floating Cart Button -->
+    <button id="cart-toggle" class="floating-cart animate-fade-in hidden">
+        <span class="cart-icon">🛒</span>
+        <span id="cart-count" class="cart-badge">0</span>
+    </button>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer glass">
+        <div class="cart-header">
+            <h3>DEINE MERKLISTE</h3>
+            <button id="close-cart" class="btn-close">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-container">
+            <!-- Items will be injected here -->
+            <p class="empty-msg">Deine Liste ist leer.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Gesamt (ca.):</span>
+                <span id="cart-total-price">€ 0.00</span>
+            </div>
+            <p class="cart-note">Bitte bei der Bestellung beim Service angeben.</p>
+            <button id="clear-cart" class="btn-clear">Liste leeren</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero animate-fade-in">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">ABEND MENÜ</h1>
+            <p class="hero-subtitle">Restaurant Milsano</p>
+            <div class="hero-decoration">
+                <span class="line"></span>
+                <span class="icon">✧</span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu App -->
+    <div id="menu-app" class="container section-padding">
+        <!-- Dynamic Content -->
+    </div>
+    </main>
+
+    <footer class="glass">
+        <div class="container footer-content">
+            <p>&copy; <span data-hydrate="footerText">2026 Restaurant Milsano</span></p>
+            <p class="nfc-tagline">Premium Digital Experience</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
